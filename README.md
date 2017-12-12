@@ -37,8 +37,8 @@ Application layer:
 The application is depicted in few layers:
 - Repository : for interaction with DB
 - Service : 
-        a) On interface part is defined validation
-        b) On implemention is defined business.
+       - a) On interface part is defined validation
+       - b) On implemention is defined business.
    each model has it's own layer     
 - Api: it's an additional layer which defines complex business logic of one process,
   so that why this can interact with multiple service layers.
@@ -47,7 +47,7 @@ The application is depicted in few layers:
        - send notification to another third system about new customer
        - send to client confirmation form
        - activate client
- -Controller: to interact with rest requests       
+ - Controller: to interact with rest requests       
       
 
 
