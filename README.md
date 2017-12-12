@@ -14,7 +14,7 @@ Functional Description:
 As a client you can do:
 - signUp (automatically default card account will be generated and assigned)
 - see your details (client details/card account details)
-- see all trasactions
+- see all transactions
 - create transactions : supply/withdraw money 
 ** There are still space to extend this application:
       - deactivate/delete client
@@ -38,16 +38,19 @@ The application is depicted in few layers:
 - Repository : for interaction with DB
 - Service : 
        - a) On interface part is defined validation
-       - b) On implemention is defined business.
+       - b) On implementation is defined business.
    each model has it's own layer     
 - Api: it's an additional layer which defines complex business logic of one process,
   so that why this can interact with multiple service layers.
-  For example the client signup can be complecated process:
+  For example the client signUp can be complicated process:
        - create client
        - send notification to another third system about new customer
        - send to client confirmation form
        - activate client
  - Controller: to interact with rest requests       
       
+*** There are no integration tests yet, due to simple logic of application and almost cases can be covered with unit tests,
+     which are faster in implementation in maintenance. 
 
+*** As Controller doesn't have business logic this was not covered with tests for all methods.      
 
