@@ -1,0 +1,161 @@
+{
+	"id": "e070039f-f478-d8f2-4e60-02b78ad8f42a",
+	"name": "onlinebanking",
+	"description": "",
+	"order": [
+		"58beee8b-1716-90c2-dcaa-cbd0fbefe12c",
+		"fecd8234-8326-1fbc-7dc1-2f6907248daf",
+		"722a7bbc-8fea-1310-838d-57a8af7660e8",
+		"b6948f0d-6b4f-9f65-3ab4-a5e36eda71f9",
+		"f6c3d6ab-8fc8-a01a-1fea-6d553b9423f8"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1513066473130,
+	"owner": "1686206",
+	"public": false,
+	"requests": [
+		{
+			"id": "58beee8b-1716-90c2-dcaa-cbd0fbefe12c",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/clients",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e070039f-f478-d8f2-4e60-02b78ad8f42a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create client",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1513066492241,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"address\": \"Some address\",\n  \"email\": \"string@mail.com\",\n  \"firstName\": \"lastName\",\n  \"identityCard\": \"1234567890123\",\n  \"lastName\": \"lastName\",\n  \"password\": \"12345678\",\n  \"confirmPassword\": \"12345678\",\n  \"phoneNumber\": \"0123456789\"\n}"
+		},
+		{
+			"id": "722a7bbc-8fea-1310-838d-57a8af7660e8",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/clients/string@mail.com/cards/default",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e070039f-f478-d8f2-4e60-02b78ad8f42a",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get default card account details",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1513066520727,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "b6948f0d-6b4f-9f65-3ab4-a5e36eda71f9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/clients/string@mail.com/cards/default/transactions",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1513111946044,
+			"name": "Create transaction",
+			"description": "",
+			"collectionId": "e070039f-f478-d8f2-4e60-02b78ad8f42a",
+			"responses": [],
+			"rawModeData": "{\n  \"amount\": 50,\n  \"location\": \"Atm nr 10, Elevator str, Sunset City\"\n}"
+		},
+		{
+			"id": "f6c3d6ab-8fc8-a01a-1fea-6d553b9423f8",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/clients/string@mail.com/transactions/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e070039f-f478-d8f2-4e60-02b78ad8f42a",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get all transactions",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1513066554465,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "fecd8234-8326-1fbc-7dc1-2f6907248daf",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/clients/string@mail.com/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e070039f-f478-d8f2-4e60-02b78ad8f42a",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get client details",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1513066504033,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
