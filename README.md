@@ -8,6 +8,7 @@ Technology stack:
 - spring-boot
 - JPA + hibernate
 - spring validation+hibernate validator
+- swagger2
 * The spring security was not integrated yet.
 
 Functional Description:
